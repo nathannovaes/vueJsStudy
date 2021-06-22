@@ -1,7 +1,9 @@
 <template>
   <header>
     <h1>{{ title }}</h1>  
-      <Button @show-form="$emit('show-form')" color="green" icon="fa-plus"/>
+    <Button @btn-click="$emit('toggle-form-button')" 
+    :color="changeButtonContent? 'red' : 'green'" 
+    :icon="changeButtonContent ? 'fa-times' : 'fa-plus'"/>
   </header>
 </template>
 
@@ -11,15 +13,13 @@
   export default {
     name: 'Header',
     props: {
-      title: {
-        type: String,
-        default: 'Hello world.'
-      }
+      title: String,
+      changeButtonContent: Boolean
     },
     components: {
       Button,
     },
-    emits: ['show-form']
+    emits: ['toggle-form-button']
   }
 </script>
 

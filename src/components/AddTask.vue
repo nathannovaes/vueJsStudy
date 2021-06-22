@@ -12,7 +12,7 @@
       <div>Lembrar</div>
       <input type="checkbox" v-model="reminder" name="reminder" />
     </div>
-    <input type="submit" value="Salvar Tarefa" class="btn btn-block"/>
+    <input type="submit" value="Salvar Tarefa" class="btn btn-block btn-blue"/>
   </form>
 </template>
 <script>
@@ -34,7 +34,6 @@ import Button from './Button.vue'
         this.formValidation();
       
         const newTask = {
-          id: Math.floor(Math.random() * 100000),
           text: this.text,
           day: this.day,
           reminder: this.reminder
@@ -94,5 +93,8 @@ import Button from './Button.vue'
     height: 20px;
   }
 
+  .btn-blue {
+    background-color: steelblue;
+  }
 
 </style>

@@ -15,7 +15,7 @@
     },
     methods: {
       onClick() {
-        this.$emit('show-form')
+        this.$emit('btn-click')
       }
     }
   }
@@ -31,6 +31,6 @@
   }
 
   .blue {
-    background-color: darkblue;
+    background-color: steelblue;
   }
 </style>
