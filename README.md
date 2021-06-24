@@ -1,4 +1,4 @@
-# vusJsStudy
+# vueJsStudy
 
 ### Um resumo sobre o que aprendi fazendo esse projeto.
 
